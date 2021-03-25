@@ -8,12 +8,14 @@ a:link {
     color:#c08552;
 }
 
-h1 {
+h1, h2, h3 {
     color:#5f3024;
 }
 
 nav {
     background-color:#dab49d;
+    padding:10px;
+    margin-bottom:30px;
 }
 
 nav a {
