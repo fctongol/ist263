@@ -1,0 +1,25 @@
+
+body {
+    background-color:#faf0e6;
+    color:#895737;
+}
+
+a:link {
+    color:#c08552;
+}
+
+h1 {
+    color:#5f3024;
+}
+
+nav {
+    background-color:#dab49d;
+}
+
+nav a {
+    color:#3C0000;
+}
+
+nav a:hover {
+    background-color:#F3E9DC;
+}
