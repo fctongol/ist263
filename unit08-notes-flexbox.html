@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Unit 8 Flex</title>
         <meta charset="UTF-8">
+
         <style>
             body {background-color: #999999;}
             img {width: 150px;}
@@ -19,26 +19,28 @@
                border: 1px solid white;
            }
            
-           .firstrow, .secondrow {display: flex;}
+        .firstrow, .secondrow {display: flex;}
 
-            .secondcol, .thirdcol, .fourthcol, .fifthcol {
+        .first col, .secondcol, .thirdcol, .fourthcol, .fifthcol {
                flex:1; /* ratio of space column takes up */
            }
 
-           .firstcol {
-               flex:2;
-           }
+           .firstcol {order:3;}
 
-           .sndrowfirstcol {
-               flex-basis:20%;
-           }
+           .secondcol {order:1;}
+           /* you can change the order of containers with order properrty */
 
-           .sndrowsecondcol {
-               flex-basis:45%;
-           }
+           .sndrowfirstcol {flex-basis:20%;}
+
+           .sndrowsecondcol {flex-basis:45%;}
            /*every child container will display side by side */
 
+           img {
+               border-bottom:1px solid white;
+           }
+
         </style>
+
     </head>
     <body>
         
@@ -123,6 +125,7 @@
                 <a href="https://www.syracuse.edu/about/contact/emergencies/">Emergencies</a>
                 <a href="https://www.syracuse.edu/about/site/privacy-policy/">Privacy</a>
                 </div>
+                
             </div>
          
         </footer>
