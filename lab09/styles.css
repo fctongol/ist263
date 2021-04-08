@@ -13,14 +13,21 @@ h1, h2, h3 {
     color:#5f3024;
 }
 
+
 nav {
     background-color:#c6a895;
     padding:10px;
     margin-bottom:30px;
 }
 
+@media only screen and (max-width:1024px) {
+    nav a {display:block;padding:10px;}
+    .pipe {display:none;}
+}
+
 nav a {
     color:#3C0000;
+    text-decoration:none;
 }
 
 nav a:hover {
@@ -38,6 +45,7 @@ nav a:hover {
 .img1 {
     float:left;
     margin-right:30px;
+    max-width:100%;
 }
 
 .address {
@@ -63,6 +71,7 @@ nav a:hover {
     border-radius:1em;
     margin:50px;
     font-family:Montserrat, Helvetica, Arial;
+    flex-wrap:wrap;
 }
 
 .contactflex {
@@ -78,6 +87,7 @@ nav a:hover {
     flex:1;
     order:1;
     font-weight:700;
+    padding:0px 20px 20px 0px;
 }
 
 .linkedimg {
