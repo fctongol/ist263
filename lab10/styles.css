@@ -69,7 +69,7 @@ nav a:hover {
     background-color:#e2d0c5;
     padding:25px;
     border-radius:1em;
-    margin:50px;
+    margin:0px 50px 50px 50px;
     font-family:Montserrat, Helvetica, Arial;
     flex-wrap:wrap;
 }
@@ -97,4 +97,22 @@ nav a:hover {
 .contactitle {
     font-size:2em;
     font-weight:700;
+}
+
+.contactsubhead {
+    font-size:1.75em;
+    font-weight:700;
+    margin-left:50px;
+}
+
+#skip {
+    position:absolute;
+    left:-999px;
+}
+
+#skip:focus {
+    position:absolute;
+    left:10px;
+    background-color:white;
+    border:1px solid black;
 }
