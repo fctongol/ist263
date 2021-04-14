@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 10 Notes Accessibility</title>
+        <style>
+            #skip {
+                position:absolute;
+                left:-999px;
+            }
+            /* this position based on top left of viewport and pushes the skip link */
+            #skip:focus {
+                position:absolute;
+                left:10px;
+                background-color:white;
+                border:1px solid black;
+            }
+            /* when you tab to skip link it moves it back on screen */
+        </style>
+    </head>
+
+    <body>
+        <h1>Accessibility</h1>
+        <!---make sure you use h1 for ain heading, h2 for subheading, h3 for subsubheading etc.--->
+        
+        <img src="images/LI-Logo.png" width="30" alt="linkedin logo">
+
+        <!-- nothing in quotes means screen reader ignores it-->
+        <!-- do not put image of or photo of -->
+
+        <a href="#maincontent" id="skip">Skip to Content</a>
+        <!-- pound sign says we ar elinking within page to an element that has an id of main content-->
+
+        <a href="http://www.google.com" tabindex="3">Google</a>
+        <a href="http://www.amazon.com" tabindex="2">Amazon</a>
+        <a href="http://www.ebay.com" tabindex="1">Ebay</a>
+        <!-- for complex layouts determine order of items tabbed through-->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis auctor elit. Enim nunc faucibus a pellentesque sit. Non odio euismod lacinia at quis risus sed. Egestas quis ipsum suspendisse ultrices. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Vitae congue mauris rhoncus aenean vel elit. Vel eros donec ac odio tempor orci dapibus ultrices. Vitae proin sagittis nisl rhoncus mattis rhoncus. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Et molestie ac feugiat sed lectus vestibulum mattis. Sit amet risus nullam eget. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Elementum nibh tellus molestie nunc non. Dignissim enim sit amet venenatis urna. Posuere sollicitudin aliquam ultrices sagittis orci a. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Fermentum odio eu feugiat pretium nibh ipsum.</p>
+
+        <p>Urna cursus eget nunc scelerisque viverra mauris. Aliquam sem et tortor consequat id porta nibh venenatis cras. Eu consequat ac felis donec et odio pellentesque diam volutpat. Congue nisi vitae suscipit tellus mauris a. Viverra suspendisse potenti nullam ac tortor vitae. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Ipsum dolor sit amet consectetur adipiscing elit. Nunc sed augue lacus viverra. At lectus urna duis convallis convallis tellus. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Lorem ipsum dolor sit amet consectetur adipiscing. Varius vel pharetra vel turpis nunc eget lorem. Cursus risus at ultrices mi. Vitae et leo duis ut.</p>
+            
+        <p>Ornare arcu odio ut sem nulla pharetra diam sit amet. Odio aenean sed adipiscing diam donec adipiscing tristique. Magna sit amet purus gravida quis blandit turpis cursus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Commodo ullamcorper a lacus vestibulum. Congue mauris rhoncus aenean vel elit. Justo donec enim diam vulputate ut pharetra sit. Morbi tristique senectus et netus. Sapien pellentesque habitant morbi tristique. Convallis tellus id interdum velit laoreet id donec. Neque volutpat ac tincidunt vitae semper quis. Neque viverra justo nec ultrices dui sapien eget mi proin.</p>
+            
+        <a id="maincontent"></a>
+        <!-- Here's the thing the anchor tag links to-->
+        <p>Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Aliquam etiam erat velit scelerisque in. Ultrices in iaculis nunc sed augue lacus viverra. Laoreet non curabitur gravida arcu ac tortor. Cras fermentum odio eu feugiat pretium nibh. Molestie nunc non blandit massa enim nec. Vel pretium lectus quam id leo in vitae turpis massa. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Arcu vitae elementum curabitur vitae. Convallis convallis tellus id interdum velit laoreet id. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Nisi porta lorem mollis aliquam ut porttitor leo. Gravida arcu ac tortor dignissim convallis aenean. Egestas diam in arcu cursus. Non blandit massa enim nec dui nunc mattis.
+            
+        </p>
+    </body>
+</html>
