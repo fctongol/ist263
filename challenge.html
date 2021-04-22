@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 11 - Challenge</title>
+
+        <script>
+            function YouLeft() {
+                // alert('You left this form element');
+
+                document.getElementById("message").innerHTML = "you left this form element"
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Create Account</h1>
+        <form action="mailto:fctongol@syr.edu" method="POST">
+            <label for="username">Enter Username:</label>
+            <input type="text" name="username" id="username" onblur="YouLeft();"><br><br>
+            
+            <label for="password">Enter Password:</label>
+            <input type="text" name="password" id="password" onblur="YouLeft();">
+            
+            <br><br>
+            <input type="submit" value="Sign in">
+        </form>
+    </body>
+</html>
