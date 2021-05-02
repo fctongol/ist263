@@ -360,7 +360,6 @@ h1 {
     position:relative;
     text-align:center;
     color:#322aca;
-    background-color:rgba(256, 256, 256, .8);
     margin-top:-25px;
 }
 
@@ -468,4 +467,14 @@ h1 {
 
 .budgetimg {
     width:100%;max-width:1000px;margin-left:100px;
+}
+
+.chartimg {
+    width:100%;
+    max-width:500px;
+}
+
+.bracketimg {
+    width:100%;
+    max-width:1000px;
 }
