@@ -21,7 +21,7 @@
 <g>
 	
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="179.4566" y1="9.9632" x2="326.5717" y2="249.7063" gradientTransform="matrix(1 0 0 -1 0 375)">
-		<stop  offset="0" style="stop-color:#A1A1BC"/>
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 	</linearGradient>
 	<path class="st0" d="M21.73,261.07l168,97.13c24.69,14.26,55.1,14.28,79.79,0.03L500,225.28L281.08,99.42L21.93,241.91

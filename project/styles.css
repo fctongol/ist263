@@ -262,7 +262,9 @@ h1 {
 
 .titlesec{
     position:absolute;
-    border:1px solid #fff;
+    background-color:#fff;
+    border:1px solid #000;
+    color:#000;
     margin-left:-300px;
     border-radius:50px;
     padding:10px 150px;
