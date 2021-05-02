@@ -121,18 +121,18 @@ h1 {
     color:#4c46cb;
 }
 
-#sectionbg {
+.sectionbg {
     background-color:#7871ff;
 }
 
-#sectioncontainer {
+.sectioncontainer {
     width: 1200px;
     margin: auto;
     display:flex;
     padding:100px 0px;
 }
 
-#sectioncontainer2 {
+.sectioncontainer2 {
     width: 1200px;
     margin: auto;
     display:flex;
@@ -260,7 +260,7 @@ h1 {
 
 .pageheadimg {margin-top:-100px;width:100%;max-width:1200px;}
 
-#pagecontainer {
+.pagecontainer {
     background-color: #fff;
     width:100%;
     max-width:1200px;
@@ -268,7 +268,7 @@ h1 {
     padding:50px 0px 0px 0px;
 }
 
-#pagecontainer2 {
+.pagecontainer2 {
     background-color: #fff;
     width:100%;
     max-width:1200px;
@@ -402,7 +402,7 @@ h1 {
     .pagetext {padding:0;}
     .pagetext2 {padding:0;}
     .pageptitle3 {text-align:left;}
-    #pagecontainer {display:block;}
+    .pagecontainer {display:block;}
     .budgetimg {max-width:500px;margin:0;}
     .savemethodcontainer {display: block;margin-left:25px;}
     .savemethod {margin-top:25px;}
