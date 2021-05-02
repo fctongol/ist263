@@ -4,37 +4,47 @@
 <head>
     <meta charset="utf-8">
     <title>College Cents Cashflow</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav>
-        <img src="images/smalllogo.png" alt="College Cents Logo">
-        <a href="index.html">Home</a>
-        <a href="cashflow.html">Cashflow</a>
-        <a href="investments.html">Investments</a>
-        <a href="taxes.html">Taxes</a>
-        <a href="retirement.html">Retirement</a>
+        <div class="navcontainer">
+            <img src="images/smalllogo.png" alt="College Cents Logo" class="navimg">
+
+            <div class="navlinks">
+                <a href="index.html">Home</a> 
+                <a href="cashflow.html">Cashflow</a> 
+                <a href="investments.html">Investments</a>
+                <a href="taxes.html">Taxes</a>
+                <a href="retirement.html">Retirement</a>
+            </div>
+        </div>
     </nav>
 
     <header>
-        <p>“The slightest adjustments to your daily routines can dramatically alter the outcomes in your life.” – Darren
-            Hardy</p>
-        <h1>Cash Flow Management</h1>
-        <img src="images/cashflowbanner.jpg" alt="Fan of hundred dollar bills">
+        <div>
+            <p class="pagequote">“The slightest adjustments to your daily routines can dramatically alter the outcomes in your life.” – Darren
+                Hardy</p>
+            <h1 class="pagetitle">Cash Flow Management</h1>
+            <img src="images/cashflowbanner.jpg" alt="Fan of hundred dollar bills" class="pageheadimg">
+        </div>
     </header>
 
     <main>
         <section>
-            <h2>Creating A Budget Plan</h2>
+            <br>
+            <h2 class="pagesubtitle">Creating A Budget Plan</h2>
 
-            <div>
+            <div id="pagecontainer">
                 <div>
                     <img src="images/income.jpg" alt="calulator ontop of money">
                 </div>
 
                 <div>
-                    <h3>Determine Your Income |</h3>
-                    <p>Your income is typically defined as the money you receive, especially on a regular basis. Sources
+                    <h3 class="pageptitle">Determine Your Income |</h3>
+                    <p class="pagetext"> Your income is typically defined as the money you receive, especially on a regular basis. Sources
                         of income during college varies from student to student. It could be from a part-time job to an
                         allowance to a small business or all of the above. No matter what your income is, the first step
                         to managing your money is being aware of how much you earn.</p>
@@ -42,14 +52,15 @@
             </div>
             <br>
 
-            <h3>| Savings & Spending</h3>
+            <div id="pagecontainer2">
+            <h3 class="pageptitle2">| Savings & Spending</h3>
             <p>After calculating how much you earn, determine the timeframe of your budget. You can have a weekly
                 budget, bi-weekly budget or a monthly budget. Choosing which budget is right for you usually depends on
                 when you get paid and how much self-control you have. Other factors can also affect what is ideal for
                 you such as when you buy groceries, when you pay for subscriptions, when you pay your phone bill and
                 etc. If you don’t know where to start, a monthly budget is the most common.</p>
 
-            <img src="images/budgetbreakdown.jpg" alt="pie chart of a budget breakdown">
+            <img src="images/budgetbreakdown.jpg" alt="pie chart of a budget breakdown" class="budgetimg">
 
             <p>The first things to allocate in your budget are essential expenses. Don’t convince yourself that a weekly
                 shopping spree or dinner with friends are essential expenses. This category is for housing, utilities,
@@ -58,11 +69,11 @@
             <p>Once you subtract all your essential costs, what’s left of your income is divided for savings and
                 desires. How this is divided all depends on your dedication. The obvious recommendation is to save all
                 of your leftover money, however humans aren’t perfect, especially college students with newfound
-                independence. Here are some methods you can choose from.</p>
-
-            <div>
-                <div>
-                    <p><span>Save The First, Spend The Rest</span><br><br>
+                independence. Here are some methods you can choose from:</p>
+                <br>
+            <div class="savemethodcontainer">
+                <div class="savemethod">
+                    <p><span class="savemethodtitle">Save The First, Spend The Rest</span><br><br>
                         This method involves taking the first digit of your leftover income and putting the whole number
                         into your savings, leaving what’s leftover to spend on whatever you want. For example if you
                         have $657 left over, you put $600 into your savings and $57 can be spent on clothes, products,
@@ -70,22 +81,22 @@
                     </p>
                 </div>
 
-                <div>
-                    <p><span>50/50</span><br><br>
+                <div class="savemethod">
+                    <p><span class="savemethodtitle2">50/50</span><br><br>
                         This method is more self-explanatory in that you save half of what’s leftover and spend the
                         other half.
                     </p>
                 </div>
 
-                <div>
-                    <p><span>20/80</span><br><br>
+                <div class="savemethod">
+                    <p><span class="savemethodtitle2">20/80</span><br><br>
                         This method is like the 50/50 method rule except it’s more meant for those who want to use their
                         wealth for present experience and indulgence thus 80% of what’s left over can be spent on what
                         you want while 20% is in savings.
                     </p>
                 </div>
             </div>
-
+            <br>
             <p>There are pros and cons to each method, and these aren’t the only ones that exist. You can decide your
                 own percentage cuts best fit to your comfort zone. However, these decisions need to be thought over past
                 instant gratification. Everyone would love to blow their paycheck on Amazon impulses, but when it comes
@@ -96,17 +107,18 @@
                 college students are decades away from retirement, it’s never too early to think about it as rarely
                 anyone wants to work until their time comes. So, saving your money can also be thought of as funding for
                 an older version of you.</p>
+            </div>
         </section>
 
         <section>
-            <h2>Debt</h2>
-            <div>
+            <h2 class="pagesubtitle">Debt</h2>
+            <div id="pagecontainer">
                 <div>
                     <img src="images/debt.jpg" alt="stressed man holding papers">
                 </div>
 
                 <div>
-                    <p>
+                    <p class="pagetext">
                         Unless you received a full scholarship to your college, odds are you had to take out student
                         loans. One of your biggest priorities when it comes to finance should be to get rid of your debt
                         as soon as possible. Luckily, you have some time to pay off these loans, but the longer you
@@ -114,12 +126,17 @@
                         <br><br>Interest Rate – “the percentage of a loan that is charged as interest to the borrower in
                         addition to your principal amount.”
                         <br><br>To determine how much of your debt repayments to allocate into your budget plan, a loan
-                        calculator is a great resource.
-                        <img src="images/loancalculator.jpg" alt="Loan Calculator">
-                        <a href="https://www.bankrate.com/calculators/mortgages/loan-calculator.aspx">Bank Rate Loan
+                        calculator is a great resource.<br><br>
+                        <img src="images/loancalculator.jpg" alt="Loan Calculator" class="calcimg"><br>
+                    <a href="https://www.bankrate.com/calculators/mortgages/loan-calculator.aspx" class="bankcalc" target="_blank">Bank Rate Loan
                             Calculator</a>
+                        
                     </p>
                 </div>
+            </div>
+
+            <div id="pagecontainer2">
+            
             </div>
         </section>
     </main>

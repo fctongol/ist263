@@ -4,38 +4,43 @@
 <head>
     <meta charset="utf-8">
     <title>College Cents Investments</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav>
-        <img src="images/smalllogo.png" alt="College Cents Logo">
-        <a href="index.html">Home</a>
-        <a href="cashflow.html">Cashflow</a>
-        <a href="investments.html">Investments</a>
-        <a href="taxes.html">Taxes</a>
-        <a href="retirement.html">Retirement</a>
+        <div class="navcontainer">
+            <img src="images/smalllogo.png" alt="College Cents Logo" class="navimg">
+
+            <div class="navlinks">
+                <a href="index.html">Home</a> 
+                <a href="cashflow.html">Cashflow</a> 
+                <a href="investments.html">Investments</a>
+                <a href="taxes.html">Taxes</a>
+                <a href="retirement.html">Retirement</a>
+            </div>
+        </div>
     </nav>
 
     <header>
-        <p>“It’s not necessary to do extraordinary things to get extraordinary results.” – Warren Buffett</p>
-        <h1>Investments</h1>
-        <img src="images/investmentsbanner.jpg" alt="Phone with stock graphs">
+        <p class="pagequote">“It’s not necessary to do extraordinary things to get extraordinary results.” – Warren Buffett</p>
+        <h1 class="pagetitle">Investments</h1>
+        <img src="images/investmentsbanner.jpg" alt="Phone with stock graphs" class="pageheadimg">
     </header>
 
     <main>
         <section>
-            <h2>Stocks</h2>
-            <p>The Stock Market can be an intimidating force, but it’s not impossible to understand. Here are some its
-                basics. </p>
+            <h2 class="pagesubtitle">Stocks</h2>
 
-            <div>
+            <div id="pagecontainer">
                 <div>
                     <img src="images/stockgraph.jpg" alt="Tesla stock graph">
                 </div>
 
                 <div>
-                    <h3>What is a stock? |</h3>
-                    <p>Stocks are basically a representation of a piece of ownership in a company. When you own a stock,
+                    <h3 class="pageptitle">What is a stock? |</h3>
+                    <p class="pagetext">Stocks are basically a representation of a piece of ownership in a company. When you own a stock,
                         you’re considered a shareholder because you ‘share’ a piece of that company along with other
                         people who own their stock. You can purchase as many shares as you want from a company and even
                         purchase parts of a share.</p>
@@ -43,22 +48,24 @@
             </div>
             <br>
 
-            <h3>| How do people earn money from the stock market?</h3>
-            <p>The stock market is constantly fluctuating. How much a company’s share is worth can change drastically
-                from $10 to $50 in a day, or it can only change with a 10¢ difference. The value of the company’s shares
-                are fundamentally determined by the profits that the company makes from sales to investors to inflation
-                etc. People earn money the stock market when they buy a company’s shares at a low value then sell their
-                shares when they’re at a higher value.
-                <br><br>If you were to buy 1 share of a company for the price of $100, and then during market hours, the
-                value of the share goes up to $120, you can sell that share for $120, thus making a $20 profit. If you
-                were to have 2 shares of that company, you can sell both of them for a $40 profit, so on and so forth.
-                <br><br>This act of buying a share and selling it, is what’s considered as a trade.
-            </p>
+            <div id="pagecontainer2">
+                <h3 class="pageptitle2">| How do people earn money from the stock market?</h3>
+                <p>The stock market is constantly fluctuating. How much a company’s share is worth can change drastically
+                    from $10 to $50 in a day, or it can only change with a 10¢ difference. The value of the company’s shares
+                    are fundamentally determined by the profits that the company makes from sales to investors to inflation
+                    etc. People earn money the stock market when they buy a company’s shares at a low value then sell their
+                    shares when they’re at a higher value.
+                    <br><br>If you were to buy 1 share of a company for the price of $100, and then during market hours, the
+                    value of the share goes up to $120, you can sell that share for $120, thus making a $20 profit. If you
+                    were to have 2 shares of that company, you can sell both of them for a $40 profit, so on and so forth.
+                    <br><br>This act of buying a share and selling it, is what’s considered as a trade.
+                </p>
+            </div>
 
-            <div>
+            <div id="pagecontainer">
                 <div>
-                    <h3>| When should I buy and when should I sell?</h3>
-                    <p>The obvious advice is to buy shares when they’re low and sell shares when they’re high. Although,
+                    <h3 class="pageptitle2">| When should I buy and when should I sell?</h3>
+                    <p class="pagetext2">The obvious advice is to buy shares when they’re low and sell shares when they’re high. Although,
                         you can never know for sure when is the ideal time in which a share is considered low or high.
                         This is what makes the stock market intimidating because if you buy a share for $100 and over a
                         year the value of the share goes down to $10, you’ll essentially have lost $90 when you sell
@@ -81,35 +88,36 @@
                 </div>
             </div>
 
-            <h3>| Why choose long-term investing over short-term?</h3>
-            <p>This debate can be very convincing to the average person when you look at market summaries. If you were
-                to search up a market summary of a company’s stock, you’re usually presented with a huge value number,
-                some percentages, timeline tabs, and a graph. These graphs allow you to visually understand the trend in
-                which a company’s value goes towards, and because the market is so volatile, the trend of a company’s
-                value in a day could go down, but over 5 years, it’s constantly moving upward.
-                <br><br>Ex. In the course of 5 days during 2021, Google’s shares went from $2048 to $2002 which is
-                unfortunately a loss. In the course of 5 years, their share was valued at $744 in 2016 then $2097 in
-                2021. That is a $1353 profit per share you own!
-                <br><br>So let’s say you metaphorically started college in 2016 and graduated 2021. If you bought 10
-                shares of Google at the start of your college career for the price of $7440 in total, you would graduate
-                with that $7440 back in your pocket on top of a $13,530 profit.
-                <br><br>In short, long-term investing requires less effort in constant attention to the market as long
-                as you do your occasional, meaningful research, and it can benefit you with greater gains.
+            <div id="pagecontainer2">
+                <h3 class="pageptitle2">| Why choose long-term investing over short-term?</h3>
+                <p>This debate can be very convincing to the average person when you look at market summaries. If you were
+                    to search up a market summary of a company’s stock, you’re usually presented with a huge value number,
+                    some percentages, timeline tabs, and a graph. These graphs allow you to visually understand the trend in
+                    which a company’s value goes towards, and because the market is so volatile, the trend of a company’s
+                    value in a day could go down, but over 5 years, it’s constantly moving upward.
+                    <br><br>Ex. In the course of 5 days during 2021, Google’s shares went from $2048 to $2002 which is
+                    unfortunately a loss. In the course of 5 years, their share was valued at $744 in 2016 then $2097 in
+                    2021. That is a $1353 profit per share you own!
+                    <br><br>So let’s say you metaphorically started college in 2016 and graduated 2021. If you bought 10
+                    shares of Google at the start of your college career for the price of $7440 in total, you would graduate
+                    with that $7440 back in your pocket on top of a $13,530 profit.
+                    <br><br>In short, long-term investing requires less effort in constant attention to the market as long
+                    as you do your occasional, meaningful research, and it can benefit you with greater gains.
 
-            </p>
-
+                </p>
+            </div>
         </section>
 
         <section>
-            <h2>Index Funds</h2>
+            <h2 class="pagesubtitle">Index Funds</h2>
 
-            <div>
+            <div id="pagecontainer">
                 <div>
                     <img src="images/indexfund.jpg" alt="Chart of best index funds">
                 </div>
 
                 <div>
-                    <p>
+                    <p class="pagetext">
                         It can seem overwhelming to have to choose and research which individual companies and stocks to
                         purchase when dipping your toes into the stock market pool. It requires careful due diligence in
                         which the common student doesn’t have time for or the expertise to go through. This is where
@@ -122,12 +130,13 @@
                 </div>
             </div>
 
-            <h3>| Why Index Funds?</h3>
+            <div id="pagecontainer2">
+            <h3 class="pageptitle2">| Why Index Funds?</h3>
             <p>“Several studies have suggested that over 92%-95% of portfolio managers could not out perform the market
                 index over a 15-year period. And these figures are SO MUCH WORSE for the average individual investors.”
                 – Graham Stephan</p>
 
-            <h3>What Index Funds should I invest in?</h3>
+            <h3 class="pageptitle2">What Index Funds should I invest in?</h3>
             <ol>
                 <li>FZROX - Fidelity Total Stock Market Fund</li>
                 <li>VFIAX - Vanguard Fund SP500 Fund</li>
@@ -135,6 +144,7 @@
                 <li>FZLIX - Fidelity International Stock Market Fund</li>
                 <li>SWPPX - Charles Schwab SP500 Fund</li>
             </ol>
+            </div><br>
         </section>
     </main>
 
