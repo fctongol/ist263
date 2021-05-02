@@ -1,103 +1,3 @@
-/* body {
-    font-family:Raleway;
-    font-size:1em;
-}
-
-nav {
-    padding:25px 40px;
-    margin-bottom:50px;
-    font-family:Montserrat;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:0px;
-}
-
-.navright {
-    float:right;
-}
-
-nav a {
-    text-decoration:none;
-    padding:0px 25px;
-}
-
-h1 {
-    font-size:3.75em;
-    text-transform:uppercase;
-}
-
-.right {
-    float:right;
-}
-
-.left {
-    float:left;
-}
-
-.clear {
-    clear:both;
-}
-
-.headertext {
-    background-color:#fff;
-    bottom:0px;
-    
-}
-
-.indexcontainer {
-    position:relative;
-    text-align:center;
-    margin:50px;
-}
-
-.indeximg {
-    border:1px solid #000;
-}
-
-.indexcardscontainer {
-    display:flex;
-    margin-left:auto;
-    margin-left:right;
-}
-
-.indexcards {
-    border:2px solid #000;
-    border-radius:25px;
-    text-align:center;
-    font-family:Montserrat;
-    font-size:1.25em;
-    font-weight:bold;
-    text-transform:uppercase;
-    padding:85px 75px;
-    margin:0px 50px;
-}
-
-.headimg {
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    margin-top:-75px;
-}
-
-.headquote {
-    font-size:1.25em;
-    padding:none;
-}
-
-.headercontainer {
-    width:100%;
-    max-width:1200px;
-    max-height:550px;
-    margin:auto;
-    text-align:center;
-}
-
-.pagetitle {
-    text-align:center;
-    position:relative;
-    margin-top:-10px;
-} */
-
 body {
     font-family:Raleway;
     font-size:1em;
@@ -148,11 +48,6 @@ nav a:hover {
     width:100%;
     max-width:293px;
     max-height:93px;
-}
-
-@media only screen and (max-width:1024px) {
-    nav a {display:block;padding:10px 25px;}
-    .navimg {display:none;}
 }
 
 .headercontainer {
@@ -367,22 +262,24 @@ h1 {
 
 #pagecontainer {
     background-color: #fff;
-    width: 1200px;
+    width:100%;
+    max-width:1200px;
     margin: auto;
-    display:flex;
-    padding:50px 0px 50px 0px;
+    padding:50px 0px 0px 0px;
 }
 
 #pagecontainer2 {
     background-color: #fff;
-    width: 1200px;
+    width:100%;
+    max-width:1200px;
     margin: auto;
     text-align:justify;
     font-size:1em;
 }
 
 .pagesubtitle {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     padding-top:25px;
     font-family:Montserrat;
@@ -412,7 +309,7 @@ h1 {
 }
 
 .pagetext2 {
-    text-align:justify;padding-right:200px;font-size:1em;
+    text-align:justify;font-size:1em;
 }
 
 .pagetext3 {
@@ -471,10 +368,47 @@ h1 {
 
 .chartimg {
     width:100%;
-    max-width:500px;
 }
 
-.bracketimg {
-    width:100%;
-    max-width:1000px;
+.appcontainer {
+    display:flex;
+    justify-content: space-between;
 }
+
+.pageimgleft {
+    float:left;
+    width:100%;
+    max-width:500px;
+    padding-right:200px;
+    padding-bottom:50px;
+}
+
+.pageimgright {
+    float:right;
+    width:100%;
+    max-width:500px;
+    padding-left:200px;
+    padding-bottom:50px;
+}
+
+@media only screen and (max-width:750px) {
+    nav a {display:block;padding:10px 25px;}
+    .navimg {display:none;}
+    .pagequote {font-size:1em;}
+    .pagetitle {font-size:2em;margin-top:-10px;}
+    .pageheadimg {margin-top:-50px;}
+    .pagesecimg {margin:auto;}
+    .pageptitle {text-align:left;}
+    .pagetext {padding:0;}
+    .pagetext2 {padding:0;}
+    .pageptitle3 {text-align:left;}
+    #pagecontainer {display:block;}
+    .budgetimg {max-width:500px;margin:0;}
+    .savemethodcontainer {display: block;margin-left:25px;}
+    .savemethod {margin-top:25px;}
+    .appcontainer {display:block;margin-left:100px;}
+    .pageimgleft {padding-right:0;}
+    .pageimgright {padding-left:0;}
+}
+
+
