@@ -45,7 +45,6 @@ nav a:hover {
 }
 
 .navimg {
-    width:100%;
     max-width:293px;
     max-height:93px;
 }
@@ -392,8 +391,6 @@ h1 {
 }
 
 @media only screen and (max-width:750px) {
-    nav a {display:block;padding:10px 25px;}
-    .navimg {display:none;}
     .pagequote {font-size:1em;}
     .pagetitle {font-size:2em;margin-top:-10px;}
     .pageheadimg {margin-top:-50px;}
@@ -409,6 +406,23 @@ h1 {
     .appcontainer {display:block;margin-left:100px;}
     .pageimgleft {padding-right:0;}
     .pageimgright {padding-left:0;}
+    h1 {font-size:3em;}
+    .indextopquote {font-size:1em;margin-top:-30px;}
+    .indextitle {margin-top:-75px;}
+    .iconcontainer {display:block;padding:25px;}
+    .iconcard {margin-top:25px;padding:25px;}
+    .appcontainer img{width:200px;margin-top:25px;}
+    .sectioncontainer, .sectioncontainer2{display:block;}
+    .sectiontitle, .sectiontitle2, .sectiontitle3{position:relative;font-size:1.5em;margin:25px 0px 0px 8px;padding:10px 0px;text-align:center;}
+    .sectionquote {margin-top:25px;font-size:1em;margin-left:25px;}
+    .sectionquote2 {text-align:left;margin-top:25px;font-size:1em;}
+    .sectionlearn, .sectionlearn2{float:none;margin-left:20px;font-size:.85em;}
+    .sectionlist2 {text-align:left;}
+}
+
+@media only screen and (max-width:1200px) {
+    nav a {display:block;padding:10px 25px;}
+    .navimg {display:none;}
 }
 
 
