@@ -104,23 +104,44 @@ h1 {
     width:100%;
     max-width:1200px;
     margin:0 auto;
-    padding:100px 0px;
+    padding:100px 0px 0px 0px;
     justify-content: space-between;
 }
 
 .iconcard {
     border:2px solid #322aca;
     border-radius:25px;
-    padding:75px 50px;
+    padding:75px 25px;
+    width:100%;
+    max-width:200px;
+}
+
+.icontext, .icontip{
+    font-family:'Montserrat', sans-serif;
+    text-align:center;
+    font-size:1em;
+    color:#4c46cb;
 }
 
 .icontext {
-    font-family:'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-align:center;
     font-weight:bold;
     font-size:1.25em;
-    color:#4c46cb;
+    text-transform: uppercase;
+}
+
+.icontip {
+    display:none;
+}
+
+.resettip {
+    background-color:#322aca;
+    color:#ffffff;
+    font-weight:bold;
+    font-size:1.5em;
+    width:200px;
+    margin:50px auto;
+    text-align:center;
+    padding:10px 20px;
 }
 
 .sectone {
@@ -227,173 +248,6 @@ h1 {
     color:#322aca;
 }
 
-/*
-.pagecontainer {
-    background-color: #fff;
-    width:100%;
-    max-width:1200px;
-    margin: auto;
-    padding:50px 0px 0px 0px;
-}
-
-.pagecontainer2 {
-    background-color: #fff;
-    width:100%;
-    max-width:1200px;
-    margin: auto;
-    text-align:justify;
-    font-size:1em;
-}
-
-
-
-.pageptitle {
-    font-size:1.5em;text-align:right;margin-top:150px;color:#4c46cb;
-}
-
-.pageptitle2 {
-    font-size:1.5em;text-align:left;margin-top:25px;color:#4c46cb;
-}
-
-.pageptitle3 {
-    font-size:1.5em;text-align:right;color:#4c46cb;
-}
-
-.pageptitle4 {
-    font-size:1.5em;text-align:left;color:#4c46cb;
-}
-
-.pagetext {
-    text-align:justify;padding-left:200px;font-size:1em;
-}
-
-.pagetext2 {
-    text-align:justify;font-size:1em;
-}
-
-.pagetext3 {
-    text-align:justify;font-size:1em;
-}
-
-
-.bankcalc {
-    text-transform:uppercase;
-    color:#322aca;
-    font-weight:bold;
-}
-
-
-.budgetimg {
-    width:100%;max-width:1000px;margin-left:100px;
-}
-
-.chartimg {
-    width:100%;
-}
-
-.pageimgleft {
-    float:left;
-    width:100%;
-    max-width:500px;
-    padding-right:200px;
-    padding-bottom:50px;
-}
-
-.pageimgright {
-    float:right;
-    width:100%;
-    max-width:500px;
-    padding-left:200px;
-    padding-bottom:50px;
-} .pagesecimg {margin:auto;}
-    .pageptitle {text-align:left;}
-    .pagetext {padding:0;}
-    .pagetext2 {padding:0;}
-    .pageptitle3 {text-align:left;}
-    .pagecontainer {display:block;padding:25px;}
-    .budgetimg {max-width:500px;margin:0;}
-    
-    
-    .pageimgleft {padding-right:0;}
-    .pageimgright {padding-left:0;}*/
-
-
-
-    .savemethodcontainer {
-        display:flex;
-        font-size:1em;
-        justify-content: center;
-        margin-left:100px;
-    }
-    
-    .savemethod {
-        background-color:#fff;
-        width:350px;
-        text-align:center;
-        border-radius:50px;
-        border:1px solid #000;
-        padding:15px 25px;
-        font-size:1em;
-        margin-right:100px;
-    }
-    
-    .savemethodtitle {
-        font-size:1.25em;
-        font-weight:bold;
-        font-family:'Montserrat', sans-serif;
-        text-transform:uppercase;
-        color:#4c46cb;
-    }
-    
-    .savemethodtitle2 {
-        font-size:2em;
-        font-weight:bold;
-        font-family:'Montserrat', sans-serif;
-        text-transform:uppercase;
-        color:#4c46cb;
-    }
-
-/* Mobile Adjustments */
-@media only screen and (max-width:1024px) {
-    .pagequote {font-size:1em;}
-    .pagetitle {font-size:2em;margin-top:-10px;}
-    .pageheadimg {margin-top:-50px;}
-    
-
-    h1 {font-size:3em;}
-    .indextopquote {font-size:1em;margin-top:-30px;}
-    .indextitle {margin-top:-75px;}
-    .iconcontainer {width:100%;justify-content:center;padding:25px 0px;}
-    .iconcard {margin-top:25px;padding:25px 150px;margin-left:5px;}
-    .sectone, .secttwo {flex-wrap:wrap;}
-    .sectimg {width:400px !important;}
-    .secttitle {font-size:1.5em !important;padding:10px 0px!important;}
-    .secttext {font-size:1.25em !important;}
-    .sectlist {font-size:1em !important;}
-    .secttitle2 {font-size:1.5em !important;padding:10px 0px!important;}
-    .secttext2 {font-size:1.25em !important;}
-    .sectlist2 {font-size:1em !important;}
-
-    .pagecontainer {flex-wrap: wrap;justify-content:center;padding:50px 0px 0px 0px !important;}
-    .pagecontainercredit {flex-wrap: wrap;justify-content:center;padding:10px 0px 0px 0px !important;}
-    .pageimg {width:400px;}
-    .pageimgtax {padding:10px 0px !important;}
-    .pagecontent {padding:50px !important;}
-    .pagetext {text-align:justify !important;}
-    .pagesubtitle {text-align:center;}
-    .savemethodcontainer {flex-wrap:wrap;}
-    .savemethod {margin-top:25px;}
-    .appcontainer {flex-wrap: wrap;}
-    .appcontainer img{width:200px;}
-    
-
-}
-
-@media only screen and (max-width:1100px) {
-    nav a {display:block;padding:10px 25px;}
-    .navimg {display:none;}
-}
-
 .pagecontainer {
     display:flex;
     margin:0 auto;
@@ -460,6 +314,44 @@ h1 {
     padding:0px 50px;
 }
 
+.savemethodcontainer {
+    display:flex;
+    font-size:1em;
+    justify-content: center;
+    margin-left:100px;
+}
+
+.savemethod {
+    background-color:#fff;
+    width:350px;
+    text-align:center;
+    border-radius:50px;
+    border:1px solid #000;
+    padding:15px 25px;
+    font-size:1em;
+    margin-right:100px;
+}
+
+.savemethodtitle {
+    font-size:1.45em;
+    font-weight:bold;
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    color:#4c46cb;
+}
+
+.savemethodtitle2 {
+    font-size:2em;
+    font-weight:bold;
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    color:#4c46cb;
+}
+
+.savemethodtext {
+    display:none;
+}
+
 .saveimg {
     margin:0 auto;
     width:100%;
@@ -494,3 +386,45 @@ h1 {
     width:500px;
     padding:50px 0px;
 }
+
+/* Mobile Adjustments */
+@media only screen and (max-width:1024px) {
+    .pagequote {font-size:1em;}
+    .pagetitle {font-size:2em;margin-top:-10px;}
+    .pageheadimg {margin-top:-50px;}
+    
+
+    h1 {font-size:3em;}
+    .indextopquote {font-size:1em;margin-top:-30px;}
+    .indextitle {margin-top:-75px;}
+    .iconcontainer {width:100%;justify-content:center;padding:25px 0px;}
+    .iconcard {margin-top:25px;padding:25px 150px;margin-left:5px;}
+    .sectone, .secttwo {flex-wrap:wrap;}
+    .sectimg {width:400px !important;}
+    .secttitle {font-size:1.5em !important;padding:10px 0px!important;}
+    .secttext {font-size:1.25em !important;}
+    .sectlist {font-size:1em !important;}
+    .secttitle2 {font-size:1.5em !important;padding:10px 0px!important;}
+    .secttext2 {font-size:1.25em !important;}
+    .sectlist2 {font-size:1em !important;}
+
+    .pagecontainer {flex-wrap: wrap;justify-content:center;padding:50px 0px 0px 0px !important;}
+    .pagecontainercredit {flex-wrap: wrap;justify-content:center;padding:10px 0px 0px 0px !important;}
+    .pageimg {width:400px;}
+    .pageimgtax {padding:10px 0px !important;}
+    .pagecontent {padding:50px !important;}
+    .pagetext {text-align:justify !important;}
+    .pagesubtitle {text-align:center;}
+    .savemethodcontainer {flex-wrap:wrap;}
+    .savemethod {margin-top:25px;}
+    .appcontainer {flex-wrap: wrap;}
+    .appcontainer img{width:200px;}
+    
+
+}
+
+@media only screen and (max-width:1100px) {
+    nav a {display:block;padding:10px 25px;}
+    .navimg {display:none;}
+}
+

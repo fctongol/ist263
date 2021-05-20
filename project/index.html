@@ -11,6 +11,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
+    <script>
+
+        function CashOff () {
+                document.getElementById('cashicon').style.display = 'none';
+            }
+
+        function CashTip () {
+
+            document.getElementById('cashtipcont').style.display = 'block';
+            document.getElementById("cashtip1").style.display = 'none';
+            document.getElementById("cashtip2").style.display = 'none';
+            document.getElementById("cashtip3").style.display = 'none';
+            var cash_tip = new Array ();
+            cash_tip[0] = "cashtip1";
+            cash_tip[1] = "cashtip2";
+            cash_tip[2] = "cashtip3";
+            var i = Math.floor(3*Math.random())
+
+            document.getElementById(cash_tip[i]).style.display = 'block';
+            }
+        
+        function InvestOff () {
+                document.getElementById('investicon').style.display = 'none';
+            }
+
+        function InvestTip () {
+
+            document.getElementById('investtipcont').style.display = 'block';
+            document.getElementById("investtip1").style.display = 'none';
+            document.getElementById("investtip2").style.display = 'none';
+            document.getElementById("investtip3").style.display = 'none';
+            var invest_tip = new Array ();
+            invest_tip[0] = "investtip1";
+            invest_tip[1] = "investtip2";
+            invest_tip[2] = "investtip3";
+            var i = Math.floor(3*Math.random())
+
+            document.getElementById(invest_tip[i]).style.display = 'block';
+            }
+
+        function TaxOff () {
+                document.getElementById('taxicon').style.display = 'none';
+            }
+
+        function TaxTip () {
+
+            document.getElementById('taxtipcont').style.display = 'block';
+            document.getElementById("taxtip1").style.display = 'none';
+            document.getElementById("taxtip2").style.display = 'none';
+            document.getElementById("taxtip3").style.display = 'none';
+            var tax_tip = new Array ();
+            tax_tip[0] = "taxtip1";
+            tax_tip[1] = "taxtip2";
+            tax_tip[2] = "taxtip3";
+            var i = Math.floor(3*Math.random())
+
+            document.getElementById(tax_tip[i]).style.display = 'block';
+            }
+
+        function RetireOff () {
+                document.getElementById('retireicon').style.display = 'none';
+            }
+
+        function RetireTip () {
+
+            document.getElementById('retiretipcont').style.display = 'block';
+            document.getElementById("retiretip1").style.display = 'none';
+            document.getElementById("retiretip2").style.display = 'none';
+            document.getElementById("retiretip3").style.display = 'none';
+            var retire_tip = new Array ();
+            retire_tip[0] = "retiretip1";
+            retire_tip[1] = "retiretip2";
+            retire_tip[2] = "retiretip3";
+            var i = Math.floor(3*Math.random())
+
+            document.getElementById(retire_tip[i]).style.display = 'block';
+            }
+
+        function TipsReset () {
+                document.getElementById('cashicon').style.display = 'block';
+                document.getElementById('cashtipcont').style.display = 'none';
+                document.getElementById('investicon').style.display = 'block';
+                document.getElementById('investtipcont').style.display = 'none';
+                document.getElementById('taxicon').style.display = 'block';
+                document.getElementById('taxtipcont').style.display = 'none';
+                document.getElementById('retireicon').style.display = 'block';
+                document.getElementById('retiretipcont').style.display = 'none';
+            }
+
+    </script>
+
 </head>
 
 <body>
@@ -48,28 +139,48 @@
                     generation’s minds. Within these pages, that statement changes now. </p>
             </div>
 
-            
-        
 
         <div class="iconcontainer">
 
             <div class="iconcard">
-                <p class="icontext"><img src="images/cashicon.png" alt="Purple Wallet Outline"><br><br>Cash Flow</p>
+                <div id="cashtipcont">
+                <p id="cashtip1" class="icontip">Remember that every month is different in your budget. Don't forget your high spending months like December when the holidays roll around.</p>
+                <p id="cashtip2" class="icontip">Don't be afraid to trim your budget. From dining out, to a subscription plan etc. Your necessities should be your priority</p>
+                <p id="cashtip3" class="icontip">Budgeting organizes your life for saving towards your bigger expense goals such as a trip, a house, a car, etc. Delayed gratification and control is key.</p>
+                </div>
+                <p class="icontext" id="cashicon" onclick="CashOff(); CashTip();"><img src="images/cashicon.png" alt="Purple Wallet Outline"><br><br>Cash Flow</p>
             </div>
 
             <div class="iconcard">
-                <p class="icontext"><img src="images/investicon.png" alt="Purple Positive Graph Outline"><br><br>Investments</p>
+                <div id="investtipcont">
+                    <p id="investtip1" class="icontip">Compound interest is your best friend. The sooner you start, the longer your investments can accrue interest, no matter how small you can contribute. $5 invested now can be worth more than $100 invested later.</p>
+                    <p id="investtip2" class="icontip">Don't try to predict the market if you don't have the time to dedicate on constant research. Companies go through a variety of surprises at any given moment, and putting all your eggs in one basket you assume will always go up is never the smart choice.</p>
+                    <p id="investtip3" class="icontip">Take emotions out of investing. Invest what you can afford to lose, leave it there, and take the long view. Returns will go up, but it's not always on a day to day basis. Focus on the long term</p>
+                    </div>
+                <p class="icontext" id="investicon" onclick="InvestOff(); InvestTip();"><img src="images/investicon.png" alt="Purple Positive Graph Outline"><br><br>Investments</p>
             </div>
 
             <div class="iconcard">
-                <p class="icontext"><img src="images/taxicon.png" alt="Purple Scales Outline"><br><br>Taxes</p>
+                <div id="taxtipcont">
+                    <p id="taxtip1" class="icontip">Do the research on tax credits and deductions. If you do your taxes ahead of time, it could allow you to look into how much you really owe or are owed, potentially saving you thousands of dollars.</p>
+                    <p id="taxtip2" class="icontip">Organize all your paperwork, income, special expenses as it's brought to you. When it comes to your filing day, it saves a lot of stress when you know for sure where your paperwork is, and you've recorded what you can write-off.</p>
+                    <p id="taxtip3" class="icontip">Even when filing is done with, keep an eye for notices of any messages from the IRS. If there are errors in your claims that aren't addressed, you could face som serioius penalties.</p>
+                    </div>
+                <p class="icontext" id="taxicon" onclick="TaxOff(); TaxTip();"><img src="images/taxicon.png" alt="Purple Scales Outline"><br><br>Taxes</p>
             </div>
 
             <div class="iconcard">
-                <p class="icontext"><img src="images/retireicon.png" alt="Purple Safe Outline"><br><br>Retirement</p>
+                <div id="retiretipcont">
+                    <p id="retiretip1" class="icontip">Take advantage of employer matching investments for retirement plans. It's practically free money that should always be on your table when discussing your benefits.</p>
+                    <p id="retiretip2" class="icontip">Don't forget about After-Tax returns on your retirement investments. That assumption of security without proper calculations could set you back from your desired retirement age.</p>
+                    <p id="retiretip3" class="icontip">Plan for inflation. The budget you follow now may increase later despite it having the same items and categories.</p>
+                    </div>
+                <p class="icontext" id="retireicon" onclick="RetireOff(); RetireTip();"><img src="images/retireicon.png" alt="Purple Safe Outline"><br><br>Retirement</p>
             </div>
 
         </div>
+
+        <p class="resettip" onclick="TipsReset();">RESET TIPS</p>
     
         </section>
 

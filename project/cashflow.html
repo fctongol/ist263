@@ -10,6 +10,29 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">    
+
+    <script>
+
+        function MethodsOff () {
+            document.getElementById('methodtext1').style.display = 'none';
+            document.getElementById('methodtext2').style.display = 'none';
+            document.getElementById('methodtext3').style.display = 'none';
+        }
+
+        function Methods1On () {
+            document.getElementById('methodtext1').style.display = 'block';
+        }
+
+        function Methods2On () {
+            document.getElementById('methodtext2').style.display = 'block';
+        }
+
+        function Methods3On () {
+            document.getElementById('methodtext3').style.display = 'block';
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -79,8 +102,8 @@
                 <br>
             <div class="savemethodcontainer">
                 <div class="savemethod">
-                    <p><span class="savemethodtitle">Save The First, Spend The Rest</span><br><br>
-                        This method involves taking the first digit of your leftover income and putting the whole number
+                    <p id="method1" class="savemethodtitle" onclick="MethodsOff(); Methods1On();">Save The First, Spend The Rest</p>
+                        <p id="methodtext1" class="savemethodtext">This method involves taking the first digit of your leftover income and putting the whole number
                         into your savings, leaving what’s leftover to spend on whatever you want. For example if you
                         have $657 left over, you put $600 into your savings and $57 can be spent on clothes, products,
                         or nights out.
@@ -88,21 +111,22 @@
                 </div>
 
                 <div class="savemethod">
-                    <p><span class="savemethodtitle2">50/50</span><br><br>
-                        This method is more self-explanatory in that you save half of what’s leftover and spend the
+                    <p id="method2" class="savemethodtitle2" onclick="MethodsOff(); Methods2On();">50/50</p>
+                        <p id="methodtext2" class="savemethodtext">This method is more self-explanatory in that you save half of what’s leftover and spend the
                         other half.
                     </p>
                 </div>
 
                 <div class="savemethod">
-                    <p><span class="savemethodtitle2">20/80</span><br><br>
-                        This method is like the 50/50 method rule except it’s more meant for those who want to use their
+                    <p id="method3" class="savemethodtitle2" onclick="MethodsOff(); Methods3On();">20/80</span></p>
+                       <p id="methodtext3" class="savemethodtext"> This method is like the 50/50 method rule except it’s more meant for those who want to use their
                         wealth for present experience and indulgence thus 80% of what’s left over can be spent on what
                         you want while 20% is in savings.
                     </p>
                 </div>
             </div>
             <br>
+            <p class="pagecentertext" onclick="MethodsOff();"><b>[CLOSE METHODS]</b></p>
             <p class="pagecentertext">There are pros and cons to each method, and these aren’t the only ones that exist. You can decide your
                 own percentage cuts best fit to your comfort zone. However, these decisions need to be thought over past
                 instant gratification. Everyone would love to blow their paycheck on Amazon impulses, but when it comes
