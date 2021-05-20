@@ -1,6 +1,8 @@
 body {
     font-family:'Raleway', sans-serif;
     font-size:1em;
+    margin:0;
+    padding:0;
 }
 
 footer {
@@ -98,17 +100,18 @@ h1 {
 
 .iconcontainer {
     display:flex;
+    flex-wrap:wrap;
     width:100%;
     max-width:1200px;
-    margin:auto;
-    padding:50px;
+    margin:0 auto;
+    padding:100px 0px;
+    justify-content: space-between;
 }
 
 .iconcard {
     border:2px solid #322aca;
     border-radius:25px;
     padding:75px 50px;
-    margin-right:54px;
 }
 
 .icontext {
@@ -120,133 +123,86 @@ h1 {
     color:#4c46cb;
 }
 
-.sectionbg {
-    background-color:#7871ff;
-}
-
-.sectioncontainer {
-    width: 1200px;
-    margin: auto;
+.sectone {
     display:flex;
+    background-color:#7871ff;
+    justify-content: center;
     padding:100px 0px;
 }
 
-.sectioncontainer2 {
-    width: 1200px;
-    margin: auto;
+.secttwo {
     display:flex;
+    justify-content: center;
     padding:100px 0px;
-    color:#fff;
 }
 
-.sectionimg {
-    padding-right:75px;
-    margin-left:25px;
-    width:100%;
-    max-width:500px;
+.sectimg {
+    width:500px;
 }
 
-
-.sectiontitle{
-    position:absolute;
-    background-color:#fff;
-    border:1px solid #000;
-    color:#000;
-    margin-left:-300px;
-    border-radius:50px;
-    padding:10px 150px;
-    text-transform:uppercase;
-    font-family:'Montserrat', sans-serif;
-    font-size:2.75em;
-    width:450px;
+.sectcontent {
+    padding:30px;
 }
 
-
-.sectiontitle2 {
-    position:absolute;
-    border:1px solid #322aca;
-    background-color:#7871ff;
-    color:#fff;
-    margin-left:100px;
-    border-radius:50px;
-    padding:10px 150px;
-    text-transform:uppercase;
-    font-family:'Montserrat', sans-serif;
-    font-size:2.75em;
-    width:450px;
+.sectcontent2 {
+    order:1;
     text-align:right;
+    padding:30px;
 }
 
-.sectiontitle3 {
-    position:absolute;
+.sectimgcontainer {
+    order:2;
+}
+
+.secttitle {
     background-color:#fff;
-    border:1px solid #000;
-    color:#000;
-    margin-left:-200px;
-    border-radius:50px;
-    padding:10px 150px;
     text-transform:uppercase;
-    font-family:'Montserrat', sans-serif;
     font-size:2.75em;
-    width:450px;
+    padding:10px 150px 10px 100px;
+    border:1px solid #000;
+    border-radius:50px;
+    text-align:center;
 }
 
-
-.sectionquote {
-    margin-top:145px;
-    font-size:1.5em;
-}
-
-.sectionlearn {
-    float:right;
-    text-decoration:none;
-    background-color:#322aca;
-    color:#fff;
-    border-radius:25px;
-    padding:10px 25px;
+.secttitle2 {
+    background-color:#fff;
     text-transform:uppercase;
+    font-size:2.75em;
+    padding:10px 100px 10px 150px;
+    border:1px solid #000;
+    border-radius:50px;
+    text-align:center;
 }
 
-.sectionlist {
-    list-style-type:none;
-    letter-spacing:1px;
+.secttext, .secttext2 {
+    font-size:1.5em;width:100%;max-width:700px;
+}
+
+.secttext {color:#fff;}
+
+.sectlist, .sectlist2{
+    list-style-type: none;
     font-size:1.25em;
 }
 
+.sectlist {color:#fff;}
 
-.sectionimg2 {
-    width:100%;
-    max-width:500px;
-    padding-left:50px;
-    margin-right:-100px;
-}
-
-
-
-.sectionlearn2 {
-    float:left;
-    text-decoration:none;
+.sectbutton {
     background-color:#322aca;
     color:#fff;
-    border-radius:25px;
-    padding:10px 25px;
     text-transform:uppercase;
+    padding:10px 20px;
+    border-radius:50px;
+    text-decoration:none;
 }
 
-.sectionquote2 {
-    margin-top:145px;
-    font-size:1.5em;
+.sectbuttonright {
     text-align:right;
 }
 
-.sectionlist2 {
-    list-style-type:none;
-    letter-spacing:1px;
-    font-size:1.25em;
-    text-align:right;
+.sectbuttonleft {
+    text-align:left;
 }
-
-
 
 .pagequote {text-align:center;font-size:2em;color:#4c46cb;}
 
@@ -259,6 +215,19 @@ h1 {
 
 .pageheadimg {margin-top:-100px;width:100%;max-width:1200px;}
 
+
+.pagesubtitle {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top:25px;
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-size:2em;
+    color:#322aca;
+}
+
+/*
 .pagecontainer {
     background-color: #fff;
     width:100%;
@@ -276,16 +245,7 @@ h1 {
     font-size:1em;
 }
 
-.pagesubtitle {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding-top:25px;
-    font-family:'Montserrat', sans-serif;
-    text-transform:uppercase;
-    font-size:2em;
-    color:#322aca;
-}
+
 
 .pageptitle {
     font-size:1.5em;text-align:right;margin-top:150px;color:#4c46cb;
@@ -316,50 +276,12 @@ h1 {
 }
 
 
-.savemethodcontainer {
-    display:flex;
-    font-size:1em;
-    justify-content: space-between;
-    margin-left:100px;
-}
-
-.savemethod {
-    background-color:#fff;
-    width:350px;
-    text-align:center;
-    border-radius:50px;
-    border:1px solid #000;
-    padding:15px 25px;
-    font-size:1em;
-    margin-right:100px;
-}
-
-.savemethodtitle {
-    font-size:1.25em;
-    font-weight:bold;
-    font-family:'Montserrat', sans-serif;
-    text-transform:uppercase;
-    color:#4c46cb;
-}
-
-.savemethodtitle2 {
-    font-size:2em;
-    font-weight:bold;
-    font-family:'Montserrat', sans-serif;
-    text-transform:uppercase;
-    color:#4c46cb;
-}
-
 .bankcalc {
     text-transform:uppercase;
     color:#322aca;
     font-weight:bold;
 }
 
-.calcimg {
-    width:100%;
-    max-width:500px;
-}
 
 .budgetimg {
     width:100%;max-width:1000px;margin-left:100px;
@@ -367,11 +289,6 @@ h1 {
 
 .chartimg {
     width:100%;
-}
-
-.appcontainer {
-    display:flex;
-    justify-content: space-between;
 }
 
 .pageimgleft {
@@ -388,41 +305,192 @@ h1 {
     max-width:500px;
     padding-left:200px;
     padding-bottom:50px;
-}
-
-@media only screen and (max-width:750px) {
-    .pagequote {font-size:1em;}
-    .pagetitle {font-size:2em;margin-top:-10px;}
-    .pageheadimg {margin-top:-50px;}
-    .pagesecimg {margin:auto;}
+} .pagesecimg {margin:auto;}
     .pageptitle {text-align:left;}
     .pagetext {padding:0;}
     .pagetext2 {padding:0;}
     .pageptitle3 {text-align:left;}
-    .pagecontainer {display:block;}
+    .pagecontainer {display:block;padding:25px;}
     .budgetimg {max-width:500px;margin:0;}
-    .savemethodcontainer {display: block;margin-left:25px;}
-    .savemethod {margin-top:25px;}
-    .appcontainer {display:block;margin-left:100px;}
+    
+    
     .pageimgleft {padding-right:0;}
-    .pageimgright {padding-left:0;}
+    .pageimgright {padding-left:0;}*/
+
+
+
+    .savemethodcontainer {
+        display:flex;
+        font-size:1em;
+        justify-content: center;
+        margin-left:100px;
+    }
+    
+    .savemethod {
+        background-color:#fff;
+        width:350px;
+        text-align:center;
+        border-radius:50px;
+        border:1px solid #000;
+        padding:15px 25px;
+        font-size:1em;
+        margin-right:100px;
+    }
+    
+    .savemethodtitle {
+        font-size:1.25em;
+        font-weight:bold;
+        font-family:'Montserrat', sans-serif;
+        text-transform:uppercase;
+        color:#4c46cb;
+    }
+    
+    .savemethodtitle2 {
+        font-size:2em;
+        font-weight:bold;
+        font-family:'Montserrat', sans-serif;
+        text-transform:uppercase;
+        color:#4c46cb;
+    }
+
+/* Mobile Adjustments */
+@media only screen and (max-width:1024px) {
+    .pagequote {font-size:1em;}
+    .pagetitle {font-size:2em;margin-top:-10px;}
+    .pageheadimg {margin-top:-50px;}
+    
+
     h1 {font-size:3em;}
     .indextopquote {font-size:1em;margin-top:-30px;}
     .indextitle {margin-top:-75px;}
-    .iconcontainer {display:block;padding:25px;}
-    .iconcard {margin-top:25px;padding:25px;}
-    .appcontainer img{width:200px;margin-top:25px;}
-    .sectioncontainer, .sectioncontainer2{display:block;}
-    .sectiontitle, .sectiontitle2, .sectiontitle3{position:relative;font-size:1.5em;margin:25px 0px 0px 8px;padding:10px 0px;text-align:center;}
-    .sectionquote {margin-top:25px;font-size:1em;margin-left:25px;}
-    .sectionquote2 {text-align:left;margin-top:25px;font-size:1em;}
-    .sectionlearn, .sectionlearn2{float:none;margin-left:20px;font-size:.85em;}
-    .sectionlist2 {text-align:left;}
+    .iconcontainer {width:100%;justify-content:center;padding:25px 0px;}
+    .iconcard {margin-top:25px;padding:25px 150px;margin-left:5px;}
+    .sectone, .secttwo {flex-wrap:wrap;}
+    .sectimg {width:400px !important;}
+    .secttitle {font-size:1.5em !important;padding:10px 0px!important;}
+    .secttext {font-size:1.25em !important;}
+    .sectlist {font-size:1em !important;}
+    .secttitle2 {font-size:1.5em !important;padding:10px 0px!important;}
+    .secttext2 {font-size:1.25em !important;}
+    .sectlist2 {font-size:1em !important;}
+
+    .pagecontainer {flex-wrap: wrap;justify-content:center;padding:50px 0px 0px 0px !important;}
+    .pagecontainercredit {flex-wrap: wrap;justify-content:center;padding:10px 0px 0px 0px !important;}
+    .pageimg {width:400px;}
+    .pageimgtax {padding:10px 0px !important;}
+    .pagecontent {padding:50px !important;}
+    .pagetext {text-align:justify !important;}
+    .pagesubtitle {text-align:center;}
+    .savemethodcontainer {flex-wrap:wrap;}
+    .savemethod {margin-top:25px;}
+    .appcontainer {flex-wrap: wrap;}
+    .appcontainer img{width:200px;}
+    
+
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1100px) {
     nav a {display:block;padding:10px 25px;}
     .navimg {display:none;}
 }
 
+.pagecontainer {
+    display:flex;
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+    padding:50px 0px;
+}
 
+.pagecontainercredit {
+    display:flex;
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+}
+
+.pagecontent {
+    padding:100px 50px;
+}
+
+.pagecontentcredit {
+    padding:50px;
+}
+
+.pagecontentlong {
+    padding:0px 50px;
+}
+
+.pageimgl {
+    padding:0px 50px;
+}
+
+.pagetext {
+    text-align:justify;
+    font-size:1em;
+}
+
+.pageptitler {
+    text-align:right;
+    color:#322aca;
+    font-size:1.5em;
+}
+
+.pageptitlel {
+    text-align:left;
+    color:#322aca;
+    font-size:1.5em;
+    padding-left:50px;
+}
+
+.pageptitletax {
+    text-align:left;
+    color:#322aca;
+    font-size:1.5em;
+}
+
+.pagecentercont {
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+}
+
+.pagecentertext {
+    text-align:justify;
+    padding:0px 50px;
+}
+
+.saveimg {
+    margin:0 auto;
+    width:100%;
+    max-width:1000px;
+}
+
+.budgetimg {
+    margin:0 auto;
+    width:90%;
+    max-width:1000px;
+    padding:25px;
+}
+
+.calcimg {
+    width:100%;
+    max-width:500px;
+}
+
+.appcontainer {
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+}
+
+.appcontainer img {
+    padding:10px;
+}
+
+.pageimgtax {
+    width:500px;
+    padding:50px 0px;
+}
